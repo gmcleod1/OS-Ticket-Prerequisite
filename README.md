@@ -34,8 +34,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  <img src="https://user-images.githubusercontent.com/98138436/224319337-4f6e0076-6ce9-4a21-93fb-6256adaa89fb.jpg"
+
+The virtual machine isnt anything special. Just make sure that you are using windos 10 version 21H2 for that image and make not of the password you chose in this step
 </p>
 <br />
 
