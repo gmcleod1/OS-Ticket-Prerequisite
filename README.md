@@ -90,14 +90,58 @@ Open control panel and navigate to "Programs" -> "Turn Windows Features on or of
  copy the "upload" file and navigate to C:->inetpub->wwwroot and paste the file<br>
  Next rename "upload" to "osTicket"</p>
  <img src="https://user-images.githubusercontent.com/98138436/226076266-8c417396-1897-410d-8817-26b7e46ca543.jpg"/><br>
-<p>Navigate to C->inetpub->wwwroot-> osTicket-> include and rename "ost-sampleconfig.php" to "ost-confing.php"</p><br>
-
-
-
-<p>Go back to the IIS home page and restart IIS <br>
- <img src="https://user-images.githubusercontent.com/98138436/226075727-363ab297-139d-498c-94bf-1ee2828cba37.jpg"/> <br>
+ 
+ <p>Enable some extentions that we need for osTicket<br>
+ Go back to IIS and navigate to sites-> deault-> osTicket, and double click "PHP Manager" and the finally "enable or Disable extention<br>
+ <img src="https://user-images.githubusercontent.com/98138436/227389216-6b55ea20-35c7-4e61-851f-105ea4efa8c7.jpg"/><br>
+ The extention we want to enable are: php_imap.dll, php_intl.dll, php_opcache.dl. Right click and select Enable to enable them<br>
+ <img src="https://user-images.githubusercontent.com/98138436/227389741-0a21f9c1-5cfa-411f-b75a-4c33ac11188a.jpg"/><br>
 
  
+
+
+<p>Navigate to C->inetpub->wwwroot-> osTicket-> include and rename "ost-sampleconfig.php" to "ost-confing.php"</p><br>
+<img src="https://user-images.githubusercontent.com/98138436/227389809-79cf2c32-25b8-4590-934f-021f257bf30c.jpg"/><bbr>
+ 
+ <p>Next we have to change permissions on ost-config.php by right clicking the file and navigate to-> properties-> Security tab-> advanced-> disable inheritance </p><br>
+  <img src="https://user-images.githubusercontent.com/98138436/227443660-f1857936-3ef7-49a7-88e5-16f8256c5a40.jpg"/>
+ Next click add then "select a Princeple" type everyone in the user box then select full controle 
+ <img src="https://user-images.githubusercontent.com/98138436/227450131-cb5202b1-d0dc-4912-8043-ae1a279a3b6e.jpg"/>
+
+<p>Go back to the IIS home page and restart IIS <br>
+ <img src="https://user-images.githubusercontent.com/98138436/226075727-363ab297-139d-498c-94bf-1ee2828cba37.jpg"/> <br></p>
+ 
+ <p>In IIS right click the osTicket folder in the navigation menu and then mouse down to manage folder then browse</p><br>
+ <img src="https://user-images.githubusercontent.com/98138436/227454029-c025a094-3906-413e-abc3-d31d540073d9.jpg"/><br>
+ 
+
+
+Continue Setting up osTicket in the browser (click Continue)
+Name Helpdesk
+Default email (receives email from customers)
+
+From the Installation Files, download and install HeidiSQL.
+Open Heidi SQL
+Create a new session, root/Password1
+Connect to the session
+Create a database called “osTicket”
+
+Continue Setting up osticket in the browser
+MySQL Database: osTicket
+MySQL Username: root
+MySQL Password: Password1
+Click “Install Now!”
+
+Congratulations, hopefully it is installed with no errors!
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+
+End Users osTicket URL:
+http://localhost/osTicket/ 
+
+Clean up
+Delete: C:\inetpub\wwwroot\osTicket\setup
+Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
 
 
 
