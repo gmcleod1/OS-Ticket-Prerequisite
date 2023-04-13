@@ -34,7 +34,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 
-<p>This tutorial assumes that you know how to set up and log in to an Azure virtual machine and have already logged in. The files used in this yutorial can be found <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">here</a></p>
+<p>This tutorial assumes that you know how to set up and log into an Azure virtual machine and have already logged in. The files used in this tutorial can be found <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">here</a></p>
 
 <hr>
 <p>Before we install anything, we need enable Internet information Services. This allows the virtual machine to fuction as a websever.
@@ -81,6 +81,8 @@ Open control panel and navigate to "Programs" -> "Turn Windows Features on or of
 <p> Run IIS as an admin <br>
  Click on "PHP manager" then "Register new PHP version"<br>
  <img src="https://user-images.githubusercontent.com/98138436/226075009-8a9b50f5-9126-4ce1-9a0c-f36301b957a7.jpg"/>
+<br>
+ <img src="https://user-images.githubusercontent.com/98138436/231800355-7d677338-36e6-4f76-8fb8-ae68caa4c90a.jpg"/>
 
  Navigate to "php-cgi" in the PHP folder that was created earlier<br>
  </p>
@@ -93,8 +95,11 @@ Open control panel and navigate to "Programs" -> "Turn Windows Features on or of
  
  <p>Enable some extentions that we need for osTicket<br>
  Go back to IIS and navigate to sites-> deault-> osTicket, and double click "PHP Manager" and the finally "enable or Disable extention<br>
+ 
  <img src="https://user-images.githubusercontent.com/98138436/227389216-6b55ea20-35c7-4e61-851f-105ea4efa8c7.jpg"/><br>
+ 
  The extention we want to enable are: php_imap.dll, php_intl.dll, php_opcache.dl. Right click and select Enable to enable them<br>
+ 
  <img src="https://user-images.githubusercontent.com/98138436/227389741-0a21f9c1-5cfa-411f-b75a-4c33ac11188a.jpg"/><br>
 
  
@@ -104,11 +109,15 @@ Open control panel and navigate to "Programs" -> "Turn Windows Features on or of
 <img src="https://user-images.githubusercontent.com/98138436/227389809-79cf2c32-25b8-4590-934f-021f257bf30c.jpg"/><bbr>
  
  <p>Next we have to change permissions on ost-config.php by right clicking the file and navigate to-> properties-> Security tab-> advanced-> disable inheritance </p><br>
+ 
   <img src="https://user-images.githubusercontent.com/98138436/227443660-f1857936-3ef7-49a7-88e5-16f8256c5a40.jpg"/>
- Next click add then "select a Princeple" type everyone in the user box then select full controle 
+ 
+ Next click add then "Select a Principal" type everyone in the user box then select full control
+ 
  <img src="https://user-images.githubusercontent.com/98138436/227450131-cb5202b1-d0dc-4912-8043-ae1a279a3b6e.jpg"/>
 
 <p>Go back to the IIS home page and restart IIS <br>
+ 
  <img src="https://user-images.githubusercontent.com/98138436/226075727-363ab297-139d-498c-94bf-1ee2828cba37.jpg"/> <br></p>
  
  <p>In IIS right click the osTicket folder in the navigation menu and then mouse down to manage folder then browse</p><br>
@@ -136,8 +145,8 @@ End Users osTicket URL:
 http://localhost/osTicket/ 
 
 Clean up
-Delete: C:\inetpub\wwwroot\osTicket\setup
-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+Delete: C:->inetpub->wwwroot->osTicket->setup
+Set Permissions to “Read” only: C:->inetpub->wwwroot->osTicket->include->ost-config.php
 
 
 
