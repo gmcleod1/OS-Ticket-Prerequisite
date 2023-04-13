@@ -28,11 +28,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Finising Touches
 
 
+<h2>Video Explination</h2>
+ <a href="https://www.youtube.com/watch?v=TDIyxhJxF_U"> Watch on youtube</a>
+
+
 <h2>Installation Steps</h2>
 
-<p>
-
-</p>
 
 <p>This tutorial assumes that you know how to set up and log into an Azure virtual machine and have already logged in. The files used in this tutorial can be found <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">here</a></p>
 
