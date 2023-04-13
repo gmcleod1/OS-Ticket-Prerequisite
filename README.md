@@ -117,22 +117,19 @@ Open control panel and navigate to "Programs" -> "Turn Windows Features on or of
 
 
 Continue Setting up osTicket in the browser (click Continue)
-Name Helpdesk
-Default email (receives email from customers)
 
-From the Installation Files, download and install HeidiSQL.
-Open Heidi SQL
-Create a new session, root/Password1
-Connect to the session
-Create a database called “osTicket”
+Fill out the information on this page. The email addresses do not have to be real, but you do need to remember the admin user name and password for when you log in<img src="https://user-images.githubusercontent.com/98138436/231706735-ed1d5a3c-c582-4332-a5e5-f869ef3d315c.jpg"/>
 
-Continue Setting up osticket in the browser
-MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: Password1
-Click “Install Now!”
+Next we have to connect to the sql database that we set up earlier, download Heidi sql from the installation files.
+Open Heidi SQL and connect a new session. Rename the session"osTicket" 
+User is root and the password is the password you used during the mysql set-up
 
-Congratulations, hopefully it is installed with no errors!
+Finish setting up osTicket by filling out the MySQL settings in the browser 
+<img src="https://user-images.githubusercontent.com/98138436/231729633-1bba91ed-5c8f-4d4d-b523-40c625af66c9.jpg"/>
+
+
+
+Hit "Install Now" and hopefully it is installed with no errors!
 Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
 End Users osTicket URL:
